@@ -1,12 +1,13 @@
 # API Management - Hands-on Lab Script - part 5
 
-- [Part 1 - Create an API Management instance](apimanagement-1.md) 
-- [Part 2 - Developer Portal and Product Management](apimanagement-2.md) 
-- [Part 3 - Adding API's](apimanagement-3.md) 
-- [Part 4 - Caching and Policy Expressions](apimanagement-4.md) 
-- Part 5 - Versioning and Revisions ... this document
-- [Part 6 - Analytics and Monitoring](apimanagement-6.md)
-- [Part 7 - Security](apimanagement-7.md)
+
+- [Part 1 - API Managementインスタンスの作成](apimanagement-1.md)
+- [Part 2 - 開発者ポータルと製品(Product)の管理](apimanagement-2.md)
+- [Part 3 - APIの追加](apimanagement-3.md)
+- [Part 4 - キャッシュとポリシー](apimanagement-4.md)
+- Part 5 - バージョンとリビジョン
+- [Part 6 - 分析と監視](apimanagement-6.md)
+- [Part 7 - セキュリティ](apimanagement-7.md)
 - [Part 8 - DevOps](apimanagement-8.md)
 
 ## Version and Revisions
