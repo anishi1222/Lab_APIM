@@ -23,7 +23,7 @@ Operationsアイコン > Publish Website をクリックすると、ユーザー
 #### Anoymous User (匿名ユーザー)
 
 - 認証されていないユーザーとして開発者ポータルを見ていきましょう。
-- Products (製品) の確認
+- 製品 (Product) の確認
   - Starter と Unlimited という製品の違いに注意してください。
 - APIの確認
 
