@@ -74,13 +74,16 @@ Operationsアイコン > Publish Website をクリックすると、ユーザー
 
 #### サイトの構成
 
-開発者ポータルはPaperbits <https://paperbits.io/> というWebフレームワークをフォークしたものにAPI管理固有の機能を追加しています。フォークしたものはGitHubにあります。<https://github.com/Azure/api-management-developer-portal>.
+開発者ポータルは[Paperbits](https://paperbits.io/) というフレームワークをフォークしたものにAPI管理固有の機能を追加しています。フォークしたものは[GitHub](https://github.com/Azure/api-management-developer-portal)にあります。
 
-API Managementインスタンスの外部でご自身の開発者ポータルを自身でホストし、管理することもできるため、ポータルのコードベースを編集し、提供されているコアの機能を拡張することもできます。詳細は以下のドキュメントに記載があります。 <https://github.com/Azure/api-management-developer-portal/wiki>/ <https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal>.
+API Managementインスタンスの外部でご自身の開発者ポータルを自身でホストし、管理することもできるため、ポータルのコードベースを編集し、提供されているコアの機能を拡張することもできます。詳細は以下のドキュメントに記載があります。
 
-Before you make your portal available to the visitors, you should personalize the automatically generated content. Recommended changes include the layouts, styles, and the content of the home page. This is documented at <https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal-customize>
+- [https/github.com/Azure/api-management-developer-portal/wiki](https://github.com/Azure/api-management-developer-portal/wiki)
+- [https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal)
 
-Video on customisation is at <https://www.youtube.com/watch?v=5mMtUSmfUlw>
+開発者ポータルを外部ユーザーに公開する前に、自動生成されるコンテンツのパーソナライズ、具体的には、レイアウトやスタイル、ホームページのコンテンツなどの変更を推奨します。詳細は[こちら](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal-customize)をご覧ください。 
+
+カスタマイズに関する動画は[こちら](https://www.youtube.com/watch?v=5mMtUSmfUlw)。
 
 ![](Images/APIMDevConfig.png)
 
@@ -88,12 +91,12 @@ Video on customisation is at <https://www.youtube.com/watch?v=5mMtUSmfUlw>
 
 ![](Images/APIMDevStyles.png)
 
-#### Email Configuration
+#### メールの設定
 
-The templates for the email notifications are managed from the Azure Management Portal
+メール通知のテンプレートの管理はAzure管理ポータルから実施します。
 
-- Look at notifications
-- Look at email templates
+- 通知を確認してください。
+- メールテンプレートを確認してください。
 
 ![](Images/APIMNotifications.png)
 
@@ -102,28 +105,28 @@ The templates for the email notifications are managed from the Azure Management 
 ![](Images/APIMNotificationEdit.png)
 
 
-### Product Management
+### 製品 (Product) の管理
 
-A product contains one or more APIs as well as a usage quota and the terms of use. Once a product is published, developers can subscribe to the product and begin to use the product's APIs.
+製品には1個以上のAPIが含まれているとともに、利用上限、利用条件が含まれています。製品を公開すると、開発者はその製品をサブスクライブでき、製品に含まれるAPIを利用開始できます。
 
-#### Product definition
+#### 製品の定義
 
-- Look at existing products
+- 既存の製品を確認してください。
 
 ![](Images/APIMProducts.png)
 
-- Add new product - for example a Gold tier
-  - Assign APIs | set Visibility | Create
+- 新たな製品を追加します。今回は例としてGold tierとします。
+  - APIの割り当て | ビジビリティの設定 | 作成
 
 ![](Images/APIMAddProduct.png)
 
 ![](Images/APIMAddProduct2.png)
 
-- Set Access Controls to allow developer access
+- 開発者がアクセスできるようアクセス管理を構成します。
 
 ![](Images/APIMAddProductsAccess.png)
 
-- See the new Gold Tier product in the Developer portal
+- 作成したGold Tierという製品が開発者ポータルに現れていることを確認します。
 
 ![](Images/APIMAddProductsDevPortal.png)
 
