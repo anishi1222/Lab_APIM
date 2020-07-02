@@ -1,19 +1,19 @@
 # API Management - Hands-on Lab Script - part 2
 
-- [Part 1 - Create an API Management instance](apimanagement-1.md) 
-- Part 2 - Developer Portal and Product Management... this document
-- [Part 3 - Adding API's](apimanagement-3.md)
-- [Part 4 - Caching and Policy Expressions](apimanagement-4.md)
-- [Part 5 - Versioning and Revisions](apimanagement-5.md)
-- [Part 6 - Analytics and Monitoring](apimanagement-6.md)
-- [Part 7 - Security](apimanagement-7.md)
+- [Part 1 - API Managementインスタンスの作成](apimanagement-1.md)
+- Part 2 - 開発者ポータルと製品(Product)の管理
+- [Part 3 - APIの追加](apimanagement-3.md)
+- [Part 4 - キャッシュとポリシー](apimanagement-4.md)
+- [Part 5 - バージョンとリビジョン](apimanagement-5.md)
+- [Part 6 - 分析と監視](apimanagement-6.md)
+- [Part 7 - セキュリティ](apimanagement-7.md)
 - [Part 8 - DevOps](apimanagement-8.md)
 
-## Developer Portal
+## 開発者ポータル
 
-Developer portal is located at: {apim-service-name}.developer.azure-api.net
+開発者ポータルは {apim-service-name}.developer.azure-api.net から利用できます。
 
-Accessing from link in the Overview blade of the Azure Management Portal, will display the developer portal in admin / edit mode
+Azure Portalの概要(Overview)にあるリンクからアクセスすると、開発者ポータルが管理者/編集モードで表示されます。
 Using the Operations Icon - select `Publish Website`.  It will then be available for users to access.
 
 ![](Images/APIMDeveloperPortal.png)

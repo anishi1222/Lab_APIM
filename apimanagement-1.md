@@ -1,38 +1,37 @@
 # API Management - Hands-on Lab Script - part 1
 
-- Part 1 - Create an API Management instance ... this document
-- [Part 2 - Developer Portal and Product Management](apimanagement-2.md)
-- [Part 3 - Adding API's](apimanagement-3.md)
-- [Part 4 - Caching and Policy Expressions](apimanagement-4.md)
-- [Part 5 - Versioning and Revisions](apimanagement-5.md)
-- [Part 6 - Analytics and Monitoring](apimanagement-6.md)
-- [Part 7 - Security](apimanagement-7.md)
+- Part 1 - API Managementインスタンスの作成
+- [Part 2 - 開発者ポータルと製品(Product)の管理](apimanagement-2.md)
+- [Part 3 - APIの追加](apimanagement-3.md)
+- [Part 4 - キャッシュとポリシー](apimanagement-4.md)
+- [Part 5 - バージョンとリビジョン](apimanagement-5.md)
+- [Part 6 - 分析と監視](apimanagement-6.md)
+- [Part 7 - セキュリティ](apimanagement-7.md)
 - [Part 8 - DevOps](apimanagement-8.md)
 
+## API Managementインスタンスの作成
 
-## Create an API Management instance
-
-An instance can take sometime to provision - so have one created in advance of any demo.
+Consumption Tier以外でインスタンスを作成すると時間がかかります。そのため、Consumption Tier以外で作成する場合には、事前に作成しておく必要があります。
+なお、Consumption Tierは東西日本リージョンではまだ利用できません。
 
 [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.ApiManagement)
 
-![](Images/APIMDeployBlade.png)
+<img src="Images/APIMDeployBlade.png" width="60%">
 
-Use appropriate values and hit [Create] to provision the service.
+適切な値を指定して、 [Create] ボタンを押してサービスを作成してください。
 
-- Service name must be unique.
-- For demo purposes, use the Developer tier.
+- サービス名は一意である必要があります。
+- ハンズオン用途のため、Developer tier（開発者）を選択してください。
 
 ![API Management](Images/APIManagement.png)
 
-Once the service has been provisioned, there will be:
+サービスのプロビジョニングが完了すると、以下のものが利用可能になっています。
 
-- Publisher Administration - this is now located in the Azure Management Portal
-  - ( the older Publisher portal has now been deprecated )
-- Developer portal
-- Gateway
+- 発行および管理：これはAzure Portalから利用します（以前の発行者ポータルは廃止されました）。
+- 開発者ポータル
+- ゲートウェイ
 
-The link to the developer portal is at the top of the Overview blade.
+開発者ポータルへのリンクは概要の最上段にあります。
 
 ![](Images/APIMOverviewBlade.png)
 
