@@ -1,6 +1,3 @@
-THIS PART IS UNDER CONSTRUCTION. LAST UPDATE 06/15/2020.
-
-
 # API Management - Hands-on Lab Script - part 8
 
 - [Part 1 - API Managementインスタンスの作成](apimanagement-1.md)
