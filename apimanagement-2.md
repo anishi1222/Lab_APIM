@@ -13,56 +13,56 @@
 
 開発者ポータルは {apim-service-name}.developer.azure-api.net から利用できます。
 
-Azure Portalの概要(Overview)にあるリンクからアクセスすると、開発者ポータルが管理者/編集モードで表示されます。
-Using the Operations Icon - select `Publish Website`.  It will then be available for users to access.
+Azure Portalの概要(Overview)にあるリンクからアクセスすると、開発者ポータルが管理者/編集モードで開きます。
+Operationsアイコン > Publish Website をクリックすると、ユーザーからアクセスできるようになります。
 
 ![](Images/APIMDeveloperPortal.png)
 
 ### User Experience
 
-#### Anoymous User
+#### Anoymous User (匿名ユーザー)
 
-- As an unauthenticated user, look around the developer portal
-- Check the Products
-  - Notice the difference between the Starter & Unlimited products
-- Check the APIs
+- 認証されていないユーザーとして開発者ポータルを見ていきましょう。
+- Products (製品) の確認
+  - Starter と Unlimited という製品の違いに注意してください。
+- APIの確認
 
 ![](Images/APIMDevPortalProducts.png)
 
 ![](Images/APIMDevPortalAPIs.png)
 
-#### Register for an account
+#### アカウントの登録
 
-- If logged in as Administrator - log out
-- Sign up for an account
+- Administrator としてログイン済みの場合は一旦ログアウトしてください。
+- アカウント取得のためにサインアップします。
 
 ![](Images/APIMDevSignup.png)
 
-- Check acceptance email and confirm to activate account
+- メールの記述に従い、アカウントの有効化確認をしてください。
 
 ![](Images/APIMDevSignupEmail.png)
 
-- Sign into account
+- アカウントにサインインします。
 
 ![](Images/APIMDevSignin.png)
 
-- Select Unlimited Product - Subscribe to a "Unlimited" subscription
-  - Check email - needs approval
-- Select Starter Product - Subscribe to a "Starter" subscription
-  - Check email - accepted
+- Unlimited という製品を選択し、 "Unlimited" サブスクリプションをサブスクライブします。
+  - メールを確認してください（承認が必要です）。
+- Starter という製品を選択し、"Starter" サブスクリプションをサブスクライブします。
+  - メールを確認してください（すでに受け入れ済みの状態です）。
 
 ![](Images/APIMDevSubscribe.png)
 
-- Check user profile - see products and keys
-  - Note that the Unlimited subscription is not yet Active as this request has not yet been approved
+- ユーザー・プロファイルで、製品とキーを確認します。
+  - まだ承認されていないので、Unlimited サブスクリプションはまだ有効ではない点に注意してください。
 
 ![](Images/APIMDevSubscribe2.png)
 
-#### Try an API
+#### APIを試す
 
-- Look at the Echo API
-  - Notice the developer information
-  - Test the Echo API ... there may be a CORS error - we will address that later.
+- Echo APIを見てみましょう。
+  - 開発者情報に注意してください。
+  - Echo APIをテストしようとすると、CORSエラーが出る可能性があります。これは後で対応します。
 
 ![](Images/APIMDevTryAPI.png)
 
@@ -70,13 +70,13 @@ Using the Operations Icon - select `Publish Website`.  It will then be available
 
 ![](Images/APIMDevTryAPI3.png)
 
-### Customising the Developer Portal
+### 開発者ポータルのカスタマイズ
 
-#### Site Configuration
+#### サイトの構成
 
-The developer portal is based on a fork of the Paperbits web framework <https://paperbits.io/>, and is enriched with API Management-specific features.  The fork resides at <https://github.com/Azure/api-management-developer-portal>.
+開発者ポータルはPaperbits <https://paperbits.io/> というWebフレームワークをフォークしたものにAPI管理固有の機能を追加しています。フォークしたものはGitHubにあります。<https://github.com/Azure/api-management-developer-portal>.
 
-It is possible to self-host, and manage your own developer portal outside of an API Management instance. It's an advanced option, which allows you to edit the portal's codebase and extend the provided core functionality. This is documented at <https://github.com/Azure/api-management-developer-portal/wiki>/ and <https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal>.
+API Managementインスタンスの外部でご自身の開発者ポータルを自身でホストし、管理することもできるため、ポータルのコードベースを編集し、提供されているコアの機能を拡張することもできます。詳細は以下のドキュメントに記載があります。 <https://github.com/Azure/api-management-developer-portal/wiki>/ <https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal>.
 
 Before you make your portal available to the visitors, you should personalize the automatically generated content. Recommended changes include the layouts, styles, and the content of the home page. This is documented at <https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal-customize>
 
