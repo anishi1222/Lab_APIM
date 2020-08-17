@@ -11,79 +11,83 @@
 
 ## 開発者ポータル
 
-開発者ポータルは {apim-service-name}.developer.azure-api.net から利用できます。
+開発者ポータルは自動生成される、APIのドキュメンテーションを担うフルカスタマイズ可能なWebサイトです。API利用者はこの開発者ポータルを使ってAPIを発見、利用方法を学び、利用リクエストをして、試すことができます。開発者ポータルは {apim-service-name}.developer.azure-api.net から利用できます。
 
-Azure Portalの概要(Overview)にあるリンクからアクセスすると、開発者ポータルが管理者/編集モードで開きます。
-Operationsアイコン > Publish Website をクリックすると、ユーザーからアクセスできるようになります。
+Azure Portalの概要(Overview)ブレードにあるリンクからアクセスすると、開発者ポータルが管理者/編集モードで開き、カスタマイズできるようになります。左側のメニューの Operationsアイコン > Publish Website をクリックすると、ユーザーから開発者ポータルにアクセスできるようになります。
 
 ![](Images/APIMDeveloperPortal.png)
 
 ### User Experience
 
+ユーザーが開発者ポータルをどのように遷移していくのか体験しましょう。
+
 #### Anoymous User (匿名ユーザー)
 
-- 認証されていないユーザーとして開発者ポータルを見ていきましょう。
-- 製品 (Product) の確認
-  - Starter と Unlimited という製品の違いに注意してください。
-- APIの確認
+認証されていないユーザー（新たなブラウザでURLにアクセスした状態）として開発者ポータルを見ていきましょう。
+
+> Starter と Unlimited という製品の違いに注意してください。
 
 ![](Images/APIMDevPortalProducts.png)
+
+APIにもチェックを入れることができます。ご覧のように、公開された全てのオペレーションが表示されており、ポータル内から直接テストが可能です。
 
 ![](Images/APIMDevPortalAPIs.png)
 
 #### アカウントの登録
 
-- Administrator としてログイン済みの場合は一旦ログアウトしてください。
-- アカウント取得のためにサインアップします。
+アカウント取得のためにサインアップします（Administrator としてログイン済みの場合は一旦ログアウトしてください）。
 
 ![](Images/APIMDevSignup.png)
 
-- メールの記述に従い、アカウントの有効化確認をしてください。
+メールの記述に従い、アカウントの有効化確認をしてください。
 
 ![](Images/APIMDevSignupEmail.png)
 
-- アカウントにサインインします。
+アカウントにサインインします。
 
 ![](Images/APIMDevSignin.png)
 
-- Unlimited という製品を選択し、 "Unlimited" サブスクリプションをサブスクライブします。
-  - メールを確認してください（承認が必要です）。
-- Starter という製品を選択し、"Starter" サブスクリプションをサブスクライブします。
-  - メールを確認してください（すでに受け入れ済みの状態です）。
+Starter という製品を選択し、"Starter" サブスクリプションをサブスクライブします。
+- メールを確認してください（すでに受け入れ済みの状態です）。
+
+Unlimited という製品を選択し、 "Unlimited" サブスクリプションをサブスクライブします。
+
+- メールを確認してください（承認が必要です）。
 
 ![](Images/APIMDevSubscribe.png)
 
-- ユーザー・プロファイルで、製品とキーを確認します。
-  - まだ承認されていないので、Unlimited サブスクリプションはまだ有効ではない点に注意してください。
+ユーザー・プロファイルで、製品とキーを確認します。
+
+- Unlimited に対するサブスクリプションリクエストはまだ承認されていない（ステータスはsubmitted）ので、Unlimited サブスクリプションはまだ有効ではない点に注意してください。
 
 ![](Images/APIMDevSubscribe2.png)
 
+Unlimited サブスクリプションが submitted の状態で承認が必要になったら、Azure Portalでサブスクリプションブレードに移動し、承認してください。
+
 #### APIを試す
 
-- Echo APIを見てみましょう。
-  - 開発者情報に注意してください。
-  - Echo APIをテストしようとすると、CORSエラーが出る可能性があります。これは後で対応します。
+ようやく公開されたAPIをテストできるようになりました。APIのエージを開き、Echo APIを見てみましょう。
+
+- 開発者向けの情報に着目してください。
+- GETでEcho APIをテストします（CORSエラーが出る可能性があります。これは後で対応します）。
 
 ![](Images/APIMDevTryAPI.png)
 
 ![](Images/APIMDevTryAPI2.png)
 
-![](Images/APIMDevTryAPI3.png)
+<!-- ![](Images/APIMDevTryAPI3.png) -->
 
 ### 開発者ポータルのカスタマイズ
 
 #### サイトの構成
 
-開発者ポータルは[Paperbits](https://paperbits.io/) というフレームワークをフォークしたものにAPI管理固有の機能を追加しています。フォークしたものは[GitHub](https://github.com/Azure/api-management-developer-portal)にあります。
+開発者ポータルは[Paperbits](https://paperbits.io/) というフレームワークをフォークしたものにAzure API Management固有の機能を追加しています。フォークしたものは[GitHub](https://github.com/Azure/api-management-developer-portal)にあります。
 
-API Managementインスタンスの外部でご自身の開発者ポータルを自身でホストし、管理することもできるため、ポータルのコードベースを編集し、提供されているコアの機能を拡張することもできます。詳細は以下のドキュメントに記載があります。
+API Managementインスタンスの外部でご自身の開発者ポータルを自身でホストし、管理することもできるため、ポータルのコードベースを編集し、提供されているコアの機能を拡張することもできます。詳細は [https/github.com/Azure/api-management-developer-portal/wiki](https://github.com/Azure/api-management-developer-portal/wiki) と [https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal) に記載があります。
 
-- [https/github.com/Azure/api-management-developer-portal/wiki](https://github.com/Azure/api-management-developer-portal/wiki)
-- [https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal)
+開発者ポータルを外部ユーザーに公開する前に、自動生成されるコンテンツのパーソナライズ、具体的には、レイアウトやスタイル、ホームページのコンテンツなどの変更を推奨します。詳細は [https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal-customize](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal-customize) をご覧ください。 
 
-開発者ポータルを外部ユーザーに公開する前に、自動生成されるコンテンツのパーソナライズ、具体的には、レイアウトやスタイル、ホームページのコンテンツなどの変更を推奨します。詳細は[こちら](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal-customize)をご覧ください。 
-
-カスタマイズに関する動画は[こちら](https://www.youtube.com/watch?v=5mMtUSmfUlw)。
+カスタマイズに関する動画は [https://www.youtube.com/watch?v=5mMtUSmfUlw](https://www.youtube.com/watch?v=5mMtUSmfUlw) でご覧いただけます。
 
 ![](Images/APIMDevConfig.png)
 
@@ -93,10 +97,7 @@ API Managementインスタンスの外部でご自身の開発者ポータルを
 
 #### メールの設定
 
-メール通知のテンプレートの管理はAzure管理ポータルから実施します。
-
-- 通知を確認してください。
-- メールテンプレートを確認してください。
+メール通知のテンプレートの管理はAzure管理ポータルのブレードのサイドメニューから直接実施します。利用可能な通知とカスタマイズ可能な通知テンプレートを確認しましょう。
 
 ![](Images/APIMNotifications.png)
 
@@ -107,26 +108,25 @@ API Managementインスタンスの外部でご自身の開発者ポータルを
 
 ### 製品 (Product) の管理
 
-製品には1個以上のAPIが含まれているとともに、利用上限、利用条件が含まれています。製品を公開すると、開発者はその製品をサブスクライブでき、製品に含まれるAPIを利用開始できます。
+製品には1個以上のAPIが含まれているとともに、利用上限、利用条件が含まれています。製品を公開すると、開発者はその製品をサブスクライブでき、製品に含まれるAPIを利用できるようになります。
 
 #### 製品の定義
 
-- 既存の製品を確認してください。
+再度Azure PortalのAPI Managementに戻り、左側のメニュー `Products` を開きます。
 
 ![](Images/APIMProducts.png)
 
-- 新たな製品を追加します。今回は例としてGold tierとします。
-  - APIの割り当て | ビジビリティの設定 | 作成
+新たな製品を追加します。今回は例としてGold tierとします。ビジビリティを `Published` に変更し、\[Create\] ボタンをクリックします。
 
 ![](Images/APIMAddProduct.png)
 
 ![](Images/APIMAddProduct2.png)
 
-- 開発者がアクセスできるようアクセス管理を構成します。
+開発者がアクセスできるようアクセス管理を構成します。
 
 ![](Images/APIMAddProductsAccess.png)
 
-- 作成したGold Tierという製品が開発者ポータルに現れていることを確認します。
+保存したら、作成したGold Tierという製品が開発者ポータルに現れていることを確認します。
 
 ![](Images/APIMAddProductsDevPortal.png)
 
