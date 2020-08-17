@@ -29,7 +29,7 @@ Azure Portalの概要(Overview)ブレードにあるリンクからアクセス�
 
 ![](Images/APIMDevPortalProducts.png)
 
-APIにもチェックを入れることができます。ご覧のように、公開された全てのオペレーションが表示されており、ポータル内から直接テストが可能です。
+APIを確認することもできます。ご覧のように、公開された全てのオペレーションが表示されており、ポータル内から直接テストが可能です。
 
 ![](Images/APIMDevPortalAPIs.png)
 
