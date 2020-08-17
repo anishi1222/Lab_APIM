@@ -12,23 +12,22 @@
 
 ### API Management
 
-An API represents a set of operations that can be invoked. New APIs are defined and then the desired operations are added. An API is added to a product and can be published; it may then be subscribed to and used by developers.
+APIは呼び出し可能な一連のオペレーションを表します。新たなAPIを定義し、所望のオペレーションを追加します。APIを製品に追加して発行できます。その後、開発者がサブスクライブし、利用します。
 
 #### APIs
 
-- Look at the API blade
-  - List of APIs under management
-  - Options for adding new APIs
+左側のメニューで、 \[APIs\]ブレードを開くと、全てのAPIを確認できます。新たにAPIを追加できるだけでなく、既存のAPIをカスタマイズすることもできます。
 
 ![](Images/APIMListAPIs.png)
 
 ![](Images/APIMAddAPIs.png)
 
-#### Add API from scratch
+#### 最初からAPIを追加する
 
-This will use the Start Wars API <https://swapi.dev>
+APIをコーディングするのではなく、このLabでは既存の Start Wars API <https://swapi.dev> を使うことにします。
 
-- Select [Add Blank API]
+- \[Add API\] をクリック
+  - \[Add blank API\]を選択
   - Select the [Full] option at the top of the dialog
   - Enter Display name, name and description
   - Enter back end Web Service - this is <https://swapi.dev/api>
