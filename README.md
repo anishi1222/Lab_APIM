@@ -2,12 +2,7 @@
 
 <img style="float: left;" src="Images/APIM.png">
 
-Authors
-- [Mark Harrison markharrison](http://github.com/markharrison)
-- [David Barkol dbarkol](https://github.com/dbarkol)
-- [Osvaldo Dailbert odaibert](https://github.com/odaibert)
-- [Fernando Mejía feranto](https://github.com/feranto)
-- [Akihiro Nishikawa](https://github.com/anishi1222)
+このHands-onは、バージョニングに関するよいプラクティスやセキュリティなどを含め、APIの作成からDevOpsに至るまで、Azure API Managementを理解できるように構成されています。
 
 Index
 - [Part 1 - API Managementインスタンスの作成](apimanagement-1.md)
@@ -22,7 +17,15 @@ Index
 Slides
 - [Azure API Management Slides](/slides/APIM.pptx)
 
-このHands-onは [Mark Harrison](https://github.com/markharrison/Lab_APIM) と [Fernando Mejía feranto](https://github.com/feranto/Lab_APIM) によるコンテンツを日本語化したものです。
+Authors
+- [Mark Harrison markharrison](http://github.com/markharrison)
+- [David Barkol dbarkol](https://github.com/dbarkol)
+- [Osvaldo Dailbert odaibert](https://github.com/odaibert)
+- [Fernando Mejía feranto](https://github.com/feranto)
+- [Louis-Guillaume MORAND](https://github.com/lgmorand)
+- [Akihiro Nishikawa](https://github.com/anishi1222)
+
+[Mark Harrison](https://github.com/markharrison/Lab_APIM) と [Fernando Mejía feranto](https://github.com/feranto/Lab_APIM) によるコンテンツを日本語化したものです。
 
 最終更新日: 2020/07/15 (July 15, 2020)
 
