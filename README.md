@@ -24,6 +24,6 @@ Slides
 
 このHands-onは [Mark Harrison](https://github.com/markharrison/Lab_APIM) と [Fernando Mejía feranto](https://github.com/feranto/Lab_APIM) によるコンテンツを日本語化したものです。
 
-最終更新日: 2020/06/26 (June 26, 2020)
+最終更新日: 2020/07/15 (July 15, 2020)
 
 ---
